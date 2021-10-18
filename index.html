@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nguyễn Thùy Linh</title>
+    <link rel="stylesheet" href="./accsets/css/style.css">
+    <link rel="stylesheet" href="./Font icon/themify-icons/themify-icons.css">
+</head>
+<body>  
+    <div id="main">
+        <!-- HEADER -->
+        <div id="header">
+            <!-- <a href="https://www.facebook.com/profile.php?id=100018138361929" class="fb-link"> 
+                <i class="ti-facebook"></i> 
+                Nguyễn Thùy Linh
+            </a> -->
+            <p class="text-heading">
+                Chào Mừng Crush Đến Với WEB Của Mình 
+                <i class="heart-icon ti-heart"></i>
+            </p>
+        </div>
+        <!-- CONTENT -->
+        <div id="content">
+            <div class="content-left">
+                <div class="box">
+                    <div class="content-avatar">
+                        <img src="accsets/img/avatar.jpg" alt="">
+                    </div>
+                    <div class="content-link">
+                        <a class = "icon" href="https://www.facebook.com/profile.php?id=100018138361929"><i class="ti-facebook"></i> </a>
+                        <a href="https://www.facebook.com/profile.php?id=100018138361929" class="fb-link"> 
+                            Nguyễn Thùy Linh
+                        </a>
+                    </div>
+                </div>
+                <div class="content-img">
+                    <div class="img1">
+                        <img src="./accsets/img/anh1.jpg" alt="">
+                    </div>
+                    <div class="img2">
+                        <div class="img2_1">
+                            <img src="./accsets/img/anh2.png" alt="">
+                        </div>
+                        <div class="img2_2">
+                            <img src="./accsets/img/anh3.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="content-right">
+                <div class="content-text">
+                    <h2 class="heading-content">
+                        Làm Người Yêu Tớ Nhé 
+                        <i class="heart-icon ti-heart"></i>
+                    </h2>
+                    <button class="true js-modal-open"> 
+                        Hoi Hoi
+                        <i class="ti-close"></i>
+                    </button>
+    
+                    <button class="false"> 
+                        Không Nha  
+                        <i class="ti-close"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- MODAL -->
+        <div class="modal js-modal">
+            <div class="modal-content">   
+            <p class="love-text">Hoi hoi không yêu đâu, tớ còn bé
+                <i class="heart-icon ti-heart"></i>
+            </p>
+            </div>
+        </div>
+</body>
+</html>
+
+<script>
+    const modalopen = document.querySelector('.js-modal-open')
+    const modal = document.querySelector('.js-modal')
+    function showbuytickets() {
+        modal.classList.add('open')
+    }
+    
+    // nghe hành vi click vào nút button close 
+    modalopen.addEventListener('click',showbuytickets)
+    modal.addEventListener('click',showbuytickets)
+</script>

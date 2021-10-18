@@ -1,0 +1,209 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#header {
+    background-color: palevioletred;
+    box-shadow: 1px 0px 5px #333;
+    color: #fff;
+    height: 46px;
+    /* border-bottom: 1px solid #000 ; */
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+}
+
+#header .fb-link {
+    text-align: left;
+    top : 0px;
+    left : 0px;
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+}
+
+#header .text-heading{
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+    line-height: 46px;
+}
+
+#content {
+    /* position: relative;
+    margin-top: 46px;
+    padding-top: 50%;
+    background: url(../img/hinh-anh-chibi-tinh-yeu-cute-de-thuong.jpg) top center / cover no-repeat; */
+}
+.content-left {
+    width: 30%;
+    float: left;
+    height: 100vh;
+    background: rgba(219,112,147,.4);
+}
+.content-avatar {
+    width: 250px;
+    height: 250px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin: 0 auto;
+    margin-top: 60px;
+}
+.content-avatar img {
+    width: 100%;
+    position: relative;
+    top: -20px;
+}
+.box {
+    position: relative;
+}
+.content-link {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.content-link .icon {
+    position: absolute;
+    top: -15px;
+    right: 50%;
+    transform: translateX(45%);
+}
+.content-link i {
+    font-size: 25px;
+    padding: 8px;
+    border-radius: 10px;
+    background: #0b86ee;
+    color: white;
+}
+.content-link a {
+    position: absolute;
+    top: 35px;
+    font-size: 25px;
+    text-decoration: none;
+    color: #333;
+}
+.content-link a:hover {
+    color: #fff;
+}
+.content-img {
+    width: 100%;
+    margin-top: 85px;
+    padding: 0 10px;
+}
+.img2,
+.img1 {
+    width: 50%;
+    float: left;
+}
+.img1 img {
+    width: 100%;
+}
+.img2_1 ,.img2_2 {
+    width: 100%;
+    height: 202px;
+    padding: 0 5px;
+    margin-bottom: 5px;
+}
+.img2_1 img , .img2_2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.content-right {
+    width: 70%;
+    height: 100vh;
+    float: right;
+    position: relative;
+    background: url(../img/hinh-anh-chibi-tinh-yeu-cute-de-thuong.jpg) top center / cover no-repeat;
+}
+.content-text {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    width: 100%;
+}
+
+.content-text .heading-content {
+    font-size: 34px;
+    font-style: italic;
+    color: fuchsia;
+}
+.content-text .false,
+.content-text .true{
+    margin-right: 30px;
+    margin-top: 50px;
+    font-size: 15px;
+    color: #fff;
+    background-color: hotpink;
+    border: 1px solid #fff;
+    padding: 8px;
+    text-align: center;
+}
+
+.content-text .false{
+    margin-left: 15px;
+}
+
+.true:hover {
+    background-color: #fff;
+    color: hotpink;
+}
+
+.false:hover {
+    opacity: 0;
+}
+
+.modal{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal.open{
+    display: flex;
+}
+
+.modal-content{
+    background-image: url(/accsets/img/bon-trai-tim-song-song_121245569.gif);
+    width: 900px;
+    min-height: 200px;
+    animation: modalfadein 1s ;
+}
+
+.modal .love-text{
+    width: 100%;
+    background-color: #fff;
+    font-size: 50px;
+    color: hotpink;
+    font-weight: 700;
+    text-align: center;
+}
+
+@keyframes modalfadein {
+    from{
+        opacity: 0;
+        transform: translateY(-200px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
